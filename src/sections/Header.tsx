@@ -5,10 +5,11 @@ export function Header() {
         <section className="header-section">
             <div className="space-y-8">
                 <div className="space-y-4 pb-8 border-b border-black">
-                    <h1 className="text-black">김개발</h1>
+                    <h1 className="text-black">조호진 Hojin Cho</h1>
                     <p className="text-black/60">Software Developer</p>
                     <p className="text-black/80 italic">
-                    "Building elegant solutions through clean code"
+                        Software Developer specializing in building a simple product with high UX fast.<br></br>
+                        Currently focused on creating accessible, user-centered products.
                     </p>
                 </div>
                 
@@ -17,8 +18,9 @@ export function Header() {
                     <GraduationCap size={24} className="text-black mt-1 flex-shrink-0" />
                     <div className="space-y-1">
                         <p className="text-black/60">학력</p>
-                        <p className="text-black">서울대학교 컴퓨터공학과</p>
-                        <p className="text-black/60">2018 - 2022</p>
+                        <p className="text-black">University of Seoul <br></br>
+                        Department of Computer Science</p>
+                        <p className="text-black/60">2020 - present</p>
                     </div>
                     </div>
                     
@@ -26,8 +28,8 @@ export function Header() {
                     <Briefcase size={24} className="text-black mt-1 flex-shrink-0" />
                     <div className="space-y-1">
                         <p className="text-black/60">경력</p>
-                        <p className="text-black">ABC Tech · Frontend Developer</p>
-                        <p className="text-black/60">2022 - Present</p>
+                        <p className="text-black">TBD</p>
+                        <p className="text-black/60"></p>
                     </div>
                     </div>
                     
@@ -36,12 +38,12 @@ export function Header() {
                     <div className="space-y-1">
                         <p className="text-black/60">블로그</p>
                         <a 
-                        href="https://blog.example.com" 
+                        href="https://sumb.tistory.com/" 
                         className="text-black hover:text-black/60 underline"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                        blog.example.com
+                        sumb.tistory.com
                         </a>
                     </div>
                     </div>

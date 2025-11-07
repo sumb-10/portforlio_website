@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "tea_DB",
-    description: "다양한 차(tea) 정보를 제공하는 웹 애플리케이션. 필터 기능 및 사용자 관리 기능 및 권한 별 접근 제어 포함",
+    description: "다양한 차(tea) 정보를 제공하는 웹 애플리케이션. \n 필터 기능 및 사용자 관리 기능 및 권한 별 접근 제어 포함",
     tech: "React · typescript · PostgreSQL · Next.js",
     image: "https://images.unsplash.com/photo-1490785972325-fe9bc08360c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsJTIwYWJzdHJhY3QlMjBnZW9tZXRyaWN8ZW58MXx8fHwxNzYyNDE2ODE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
     github: "https://github.com",

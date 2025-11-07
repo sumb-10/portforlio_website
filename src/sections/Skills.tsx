@@ -6,7 +6,7 @@ export function Skills() {
     },
     {
       title: "Backend",
-      skills: ["Python", "TBD"]
+      skills: ["Python"]
     },
     {
       title: "Database",
