@@ -1,75 +1,44 @@
-# React + TypeScript + Vite
+# 🧑‍💻 Portfolio — Hojin Cho
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**조호진(Hojin Cho)**의 개인 포트폴리오 웹사이트입니다.  
+단정하고 읽기 쉬운 흑백 그리드 디자인으로, 한 페이지 안에서 개발자 소개·기술 스택·프로젝트·연락처 정보를 간결하게 보여줍니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **1페이지 구성** — Header, About, Skills, Projects, Contact, Footer로 구성  
+- **반응형 디자인** — 모바일/데스크탑 모두 자연스러운 레이아웃  
+- **심플한 그리드 구조** — 각 섹션을 얇은 black border로 구분  
+- **구조적 컴포넌트 설계** — `sections/` 단위로 유지보수 용이  
+- **Vite + TypeScript 기반** — 빠른 빌드 속도와 타입 안정성  
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+src/
+├─ sections/
+│ ├─ Header.tsx # 자기소개 / 학력 / 경력
+│ ├─ About.tsx # Who am I / Interests / Professions
+│ ├─ Skills.tsx # 기술 스택
+│ ├─ Projects.tsx # 대표 프로젝트 카드
+│ ├─ Contact.tsx # 이메일 및 소셜 링크
+│ └─ Footer.tsx # 푸터
+│
+├─ App.tsx # 전체 페이지 구조
+├─ App.css # 공통 스타일
+└─ main.tsx # 진입점
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Category | Tech |
+|-----------|------|
+| **Framework** | React 18 + TypeScript |
+| **Build Tool** | Vite |
+| **Styling** | Tailwind CSS |
+| **Language** | TypeScript |
+| **Deployment** | Vercel or Netlify |
