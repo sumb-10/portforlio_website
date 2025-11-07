@@ -18,15 +18,15 @@ const contacts = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com",
-    text: "linkedin.com/in/username",
+    href: "https://linkedin.com/in/hojin-cho",
+    text: "linkedin.com",
     description: "프로필 및 경력 사항"
   },
   {
     icon: FileText,
     label: "Resume",
     href: "#",
-    text: "Download Resume",
+    text: "없음",
     description: "이력서 다운로드"
   }
 ];
